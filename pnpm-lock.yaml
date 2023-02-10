@@ -9,10 +9,12 @@ specifiers:
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
   canvas-confetti: ^1.6.0
+  csstype: ^3.1.1
   next: 13.1.6
   next-sanity-image: ^5.0.0
   react: 18.2.0
   react-dom: 18.2.0
+  react-hot-toast: ^2.4.0
   react-icons: ^4.7.1
   stripe: ^11.10.0
   typescript: 4.9.5
@@ -26,10 +28,12 @@ dependencies:
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
   canvas-confetti: 1.6.0
+  csstype: 3.1.1
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
   next-sanity-image: 5.0.0_jsfhbigisugm334l7wag3s6qca
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-hot-toast: 2.4.0_owo25xnefcwdq3zjgtohz6dbju
   react-icons: 4.7.1_react@18.2.0
   stripe: 11.10.0
   typescript: 4.9.5
@@ -354,6 +358,14 @@ packages:
       - supports-color
     dev: false
 
+  /goober/2.1.12_csstype@3.1.1:
+    resolution: {integrity: sha512-yXHAvO08FU1JgTXX6Zn6sYCUFfB/OJSX8HHjDSgerZHZmFKAb08cykp5LBw5QnmyMcZyPRMqkdyHUSSzge788Q==}
+    peerDependencies:
+      csstype: ^3.0.10
+    dependencies:
+      csstype: 3.1.1
+    dev: false
+
   /has-symbols/1.0.3:
     resolution: {integrity: sha512-l3LCuF6MgDNwTDKkdYGEihYjt5pRPbEg46rtlmnSPlUbgmB8LOIrKJbYYFBSbnPaJexMKtiPO8hmeRjRz2Td+A==}
     engines: {node: '>= 0.4'}
@@ -556,6 +568,20 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-hot-toast/2.4.0_owo25xnefcwdq3zjgtohz6dbju:
+    resolution: {integrity: sha512-qnnVbXropKuwUpriVVosgo8QrB+IaPJCpL8oBI6Ov84uvHZ5QQcTp2qg6ku2wNfgJl6rlQXJIQU5q+5lmPOutA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      goober: 2.1.12_csstype@3.1.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    transitivePeerDependencies:
+      - csstype
     dev: false
 
   /react-icons/4.7.1_react@18.2.0:
