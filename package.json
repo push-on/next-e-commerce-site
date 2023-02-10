@@ -16,6 +16,7 @@
     "@types/node": "18.13.0",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
+    "canvas-confetti": "^1.6.0",
     "next": "13.1.6",
     "next-sanity-image": "^5.0.0",
     "react": "18.2.0",
