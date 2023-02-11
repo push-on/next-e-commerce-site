@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@next/font': 13.1.6
   '@sanity/client': ^3.4.1
   '@sanity/image-url': ^1.0.2
   '@stripe/stripe-js': ^1.46.0
@@ -20,7 +19,6 @@ specifiers:
   typescript: 4.9.5
 
 dependencies:
-  '@next/font': 13.1.6
   '@sanity/client': 3.4.1
   '@sanity/image-url': 1.0.2
   '@stripe/stripe-js': 1.46.0
@@ -42,10 +40,6 @@ packages:
 
   /@next/env/13.1.6:
     resolution: {integrity: sha512-s+W9Fdqh5MFk6ECrbnVmmAOwxKQuhGMT7xXHrkYIBMBcTiOqNWhv5KbJIboKR5STXxNXl32hllnvKaffzFaWQg==}
-    dev: false
-
-  /@next/font/13.1.6:
-    resolution: {integrity: sha512-AITjmeb1RgX1HKMCiA39ztx2mxeAyxl4ljv2UoSBUGAbFFMg8MO7YAvjHCgFhD39hL7YTbFjol04e/BPBH5RzQ==}
     dev: false
 
   /@next/swc-android-arm-eabi/13.1.6:
