@@ -7,5 +7,4 @@ const client = sanityClient({
   apiVersion: '',
   useCdn: true,
   token: '',
-  
 })
