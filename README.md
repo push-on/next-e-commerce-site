@@ -15,8 +15,4 @@
 `pnpm i stripe @stripe/stripe-js`
 
 - Create sanity Project
-`pnpm create sanity@latest -- --template clean --create-project "Sanity Project" --dataset production`
-
-or
-
 - `pnpm create sanity@latest`

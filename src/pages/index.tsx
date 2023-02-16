@@ -1,4 +1,5 @@
-import { Cart, Footer, FooterBanner, HeroBanner, Layout, NavBar, Product } from '../components';
+// import { Cart, Footer, FooterBanner, HeroBanner, Layout, NavBar, Product } from '../components';
+import { Product, FooterBanner, HeroBanner, } from '../components';
 
 export default function index() {
   const dummyProducts = ['Products 1 ', 'Products 2 ', 'Products 3 ', 'Product 4 '];
