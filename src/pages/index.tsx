@@ -4,9 +4,12 @@ import { Product, FooterBanner, HeroBanner, } from '@/components';
 import { client } from '@/lib/client';
 import products from 'sanity-ecommerse/schemas/products';
 
+
 export default function Home({ products, bannerData }: any) {
   // const dummyProducts = ['Products 1 ', 'Products 2 ', 'Products 3 ', 'Product 4 '];
-  
+
+  console.log(bannerData);
+
   return (
     <>
       <Head>
@@ -17,14 +20,13 @@ export default function Home({ products, bannerData }: any) {
       </Head>
       <main>
         <div>
-          <HeroBanner />
-          {console.log(bannerData)}
+          <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
           <div className="products-heading">
             <h1>Best Selling Products</h1>
             <p>Speakers of many variations</p>
           </div>
           <div>
-            {products?.map((product) => (product.name))}
+            {products?.map((product: any) => (product.name))}
           </div>
         </div>
       </main>
