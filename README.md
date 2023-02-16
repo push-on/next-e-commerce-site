@@ -8,6 +8,9 @@
 - install nextjs
 `pnpm create next-app`
 
+- installing 🗃️ Sanity cli
+`npm install -g @sanity/cli`
+
 - Install 🗃️ Sanity for nextjs
 `pnpm i @sanity/client @sanity/image-url next-sanity-image`
 

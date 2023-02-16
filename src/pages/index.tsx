@@ -1,9 +1,12 @@
 // import { Cart, Footer, FooterBanner, HeroBanner, Layout, NavBar, Product } from '../components';
 import Head from 'next/head';
-import { Product, FooterBanner, HeroBanner, } from '../components';
+import { Product, FooterBanner, HeroBanner, } from '@/components';
+import { client } from '@/lib/client';
+import products from 'sanity-ecommerse/schemas/products';
 
-export default function Home() {
-  const dummyProducts = ['Products 1 ', 'Products 2 ', 'Products 3 ', 'Product 4 '];
+export default function Home({ products, bannerData }: any) {
+  // const dummyProducts = ['Products 1 ', 'Products 2 ', 'Products 3 ', 'Product 4 '];
+  
   return (
     <>
       <Head>
@@ -15,15 +18,27 @@ export default function Home() {
       <main>
         <div>
           <HeroBanner />
+          {console.log(bannerData)}
           <div className="products-heading">
             <h1>Best Selling Products</h1>
             <p>Speakers of many variations</p>
           </div>
           <div>
-            {dummyProducts.map((Product) => (Product))}
+            {products?.map((product) => (product.name))}
           </div>
         </div>
       </main>
     </>
   );
 }
+
+export const getServerSideProps = async () => {
+  const query = '*[_type=="product"]';
+  const products = await client.fetch(query);
+  const bannerQuery = '*[_type=="banner"]';
+  const bannerData = await client.fetch(bannerQuery);
+
+  return {
+    props: { products, bannerData }
+  };
+};
