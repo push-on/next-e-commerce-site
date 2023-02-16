@@ -8,11 +8,11 @@
 - install nextjs
 `pnpm create next-app`
 
-
-- Install Sanity for nextjs
+- Install 🗃️ Sanity for nextjs
 `pnpm i @sanity/client @sanity/image-url next-sanity-image`
-`pnpm i stripe @stripe/stripe-js`
 
+- Install 💸 Stripe 
+`pnpm i stripe @stripe/stripe-js`
 
 - Create sanity Project
 `pnpm create sanity@latest -- --template clean --create-project "Sanity Project" --dataset production`
