@@ -2,14 +2,8 @@
 import Head from 'next/head';
 import { Product, FooterBanner, HeroBanner, } from '@/components';
 import { client } from '@/lib/client';
-import products from 'sanity-ecommerse/schemas/products';
-
 
 export default function Home({ products, bannerData }: any) {
-  // const dummyProducts = ['Products 1 ', 'Products 2 ', 'Products 3 ', 'Product 4 '];
-
-  console.log(bannerData);
-
   return (
     <>
       <Head>
