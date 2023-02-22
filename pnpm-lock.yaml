@@ -15,7 +15,7 @@ specifiers:
   react-dom: 18.2.0
   react-hot-toast: ^2.4.0
   react-icons: ^4.7.1
-  stripe: ^11.10.0
+  stripe: ^11.11.0
   typescript: 4.9.5
 
 dependencies:
@@ -33,7 +33,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-hot-toast: 2.4.0_owo25xnefcwdq3zjgtohz6dbju
   react-icons: 4.7.1_react@18.2.0
-  stripe: 11.10.0
+  stripe: 11.11.0
   typescript: 4.9.5
 
 packages:
@@ -232,8 +232,8 @@ packages:
       get-intrinsic: 1.2.0
     dev: false
 
-  /caniuse-lite/1.0.30001451:
-    resolution: {integrity: sha512-XY7UbUpGRatZzoRft//5xOa69/1iGJRBlrieH6QYrkKLIFn3m7OVEJ81dSrKoy2BnKsdbX5cLrOispZNYo9v2w==}
+  /caniuse-lite/1.0.30001456:
+    resolution: {integrity: sha512-XFHJY5dUgmpMV25UqaD4kVq2LsiaU5rS8fb0f17pCoXQiQslzmFgnfOxfvo1bTpTqf7dwG/N/05CnLCnOEKmzA==}
     dev: false
 
   /canvas-confetti/1.6.0:
@@ -477,7 +477,7 @@ packages:
     dependencies:
       '@next/env': 13.1.6
       '@swc/helpers': 0.4.14
-      caniuse-lite: 1.0.30001451
+      caniuse-lite: 1.0.30001456
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -661,8 +661,8 @@ packages:
       safe-buffer: 5.1.2
     dev: false
 
-  /stripe/11.10.0:
-    resolution: {integrity: sha512-uzQuj/Vangpp8fgkaEr6oRNfPToo5xamOhc7wxFGF/RUm7VKm/IGzoZ0cCtnGHCs5/O1AjMQsTZApgUARRVHOw==}
+  /stripe/11.11.0:
+    resolution: {integrity: sha512-CT8TZJ+bUaMmqCOljHdKwHTWym0bscrCHrKmvK2KoTaz/9gDIzG+lXTJOFUOb3K7Jwaoaori4yEVzOgA7U46+g==}
     engines: {node: '>=12.*'}
     dependencies:
       '@types/node': 18.13.0
